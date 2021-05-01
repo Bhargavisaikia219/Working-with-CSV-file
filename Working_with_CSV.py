@@ -20,3 +20,4 @@ climate_data_final = np.concatenate((climate_data, yields_of_apples.reshape(1000
 print("\nFinal data:\n")
 print(climate_data_final)
 
+np.savetxt('climate_data_final.txt', climate_data_final, fmt='%.2f', delimiter=',', header='temperature,rainfall,humidity,yields_of_apples', comments="")
